@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADF7021
+D High Performance Narrow-Band Transceiver IC
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADF7021.pdf
+$ENDCMP
+#
+#End Doc Library
