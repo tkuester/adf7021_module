@@ -12,12 +12,12 @@ Given this, the module should be...
    - Assemble with hobbyist level equipment
    - Financially accessable, limit difficult to source parts
  - Modular
-   - Able to insert into a motherboard (like the RPi CM4)
    - Minimize commitments like filter topology / amplifier output
      - Can use as TX, RX, or TX/RX (two SMA conns)
+   - Optional footprints to allow for various configurations
  - Designed to integrate into later projects
    - RF shileding footprint
-   - Mounting holes, etc
+   - Mounting holes, pluggable connectors, etc
  - Not designed for the TR-9
    - Suspect TR-9 needs tighter integration
    - Would be nice, but requirements seem to conflict
