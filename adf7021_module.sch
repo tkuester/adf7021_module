@@ -1578,50 +1578,48 @@ Wire Wire Line
 	2450 3650 2450 3750
 Wire Wire Line
 	2450 3750 1800 3750
-Text GLabel 3250 3000 0    50   Input ~ 0
+Text GLabel 3100 3000 0    50   Input ~ 0
 ADCIN
 Wire Wire Line
-	3250 3000 3600 3000
-Text GLabel 3250 2750 0    50   Input ~ 0
+	3100 3000 3600 3000
+Text GLabel 3100 2750 0    50   Input ~ 0
 SCLK
 Wire Wire Line
-	3250 2750 3600 2750
-Text GLabel 3250 2650 0    50   Input ~ 0
+	3100 2750 3600 2750
+Text GLabel 3100 2650 0    50   Input ~ 0
 SDATA
-Text GLabel 3250 2550 0    50   Input ~ 0
+Text GLabel 3100 2550 0    50   Input ~ 0
 SLE
 Wire Wire Line
-	3250 2550 3600 2550
-Wire Wire Line
-	3600 2650 3250 2650
-Text GLabel 3250 2450 0    50   Input ~ 0
+	3100 2550 3600 2550
+Text GLabel 3100 2450 0    50   Input ~ 0
 CE
 Wire Wire Line
-	3250 2450 3600 2450
-Text GLabel 4850 2550 2    50   BiDi ~ 0
+	3100 2450 3600 2450
+Text GLabel 5400 2550 2    50   BiDi ~ 0
 TxRxData
 Wire Wire Line
-	4850 2550 4600 2550
-Text GLabel 4850 2650 2    50   Output ~ 0
+	5400 2550 5050 2550
+Text GLabel 5400 2650 2    50   Output ~ 0
 TxRxCLK
 Wire Wire Line
-	4850 2650 4600 2650
-Text GLabel 4850 2900 2    50   Output ~ 0
+	5400 2650 5050 2650
+Text GLabel 5400 2900 2    50   Output ~ 0
 SREAD
-Text GLabel 4850 3000 2    50   Output ~ 0
+Text GLabel 5400 3000 2    50   Output ~ 0
 SWD
-Text GLabel 4850 3100 2    50   Output ~ 0
+Text GLabel 5400 3100 2    50   Output ~ 0
 MUXOUT
-Text GLabel 4850 3200 2    50   Output ~ 0
+Text GLabel 5400 3200 2    50   Output ~ 0
 CLKOUT
 Wire Wire Line
-	4850 3200 4600 3200
+	5400 3200 5050 3200
 Wire Wire Line
-	4600 3100 4850 3100
+	4600 3100 5400 3100
 Wire Wire Line
-	4850 3000 4600 3000
+	5400 3000 4600 3000
 Wire Wire Line
-	4600 2900 4850 2900
+	4600 2900 4750 2900
 Wire Wire Line
 	3450 3350 3600 3350
 Text GLabel 14700 4400 2    50   Input ~ 0
@@ -1656,9 +1654,9 @@ Text Notes 10300 6000 0    150  Italic 30
 I/O Section
 Text GLabel 12350 6650 2    50   Input ~ 0
 ADCIN
-Text GLabel 11250 7150 0    50   Input ~ 0
+Text GLabel 11000 7150 0    50   Input ~ 0
 SCLK
-Text GLabel 11250 7050 0    50   Input ~ 0
+Text GLabel 11000 7050 0    50   Input ~ 0
 SDATA
 Text GLabel 11250 6850 0    50   Input ~ 0
 SLE
@@ -1713,9 +1711,9 @@ $EndComp
 Wire Wire Line
 	12800 6950 12050 6950
 Wire Wire Line
-	11250 7050 11550 7050
+	11000 7050 11100 7050
 Wire Wire Line
-	11250 7150 11550 7150
+	11000 7150 11100 7150
 $Comp
 L power:GND #PWR028
 U 1 1 60231729
@@ -1790,7 +1788,7 @@ $Comp
 L Device:R R10
 U 1 1 603AFF9A
 P 2900 3750
-F 0 "R10" V 2750 3850 50  0000 C CNN
+F 0 "R10" V 2800 3750 50  0000 C CNN
 F 1 "0" V 2900 3750 50  0000 C CNN
 F 2 "" V 2830 3750 50  0001 C CNN
 F 3 "~" H 2900 3750 50  0001 C CNN
@@ -1925,9 +1923,9 @@ Wire Wire Line
 Connection ~ 14600 6700
 Text GLabel 12350 8000 2    50   Input ~ 0
 ADCIN
-Text GLabel 11250 8500 0    50   Input ~ 0
+Text GLabel 11000 8500 0    50   Input ~ 0
 SCLK
-Text GLabel 11250 8400 0    50   Input ~ 0
+Text GLabel 11000 8400 0    50   Input ~ 0
 SDATA
 Text GLabel 11250 8200 0    50   Input ~ 0
 SLE
@@ -1982,9 +1980,9 @@ $EndComp
 Wire Wire Line
 	12800 8300 12050 8300
 Wire Wire Line
-	11250 8400 11550 8400
+	11000 8400 11100 8400
 Wire Wire Line
-	11250 8500 11550 8500
+	11000 8500 11100 8500
 $Comp
 L power:GND #PWR038
 U 1 1 605D2318
@@ -2081,4 +2079,110 @@ Text Notes 10650 7200 1    30   ~ 0
 Data / SPI
 Text Notes 10650 7500 1    30   ~ 0
 Clocks
+$Comp
+L Device:R R14
+U 1 1 60677D63
+P 4900 3200
+F 0 "R14" V 4850 3400 50  0000 C CNN
+F 1 "22" V 4900 3200 50  0000 C CNN
+F 2 "" V 4830 3200 50  0001 C CNN
+F 3 "~" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3200 4600 3200
+$Comp
+L Device:R R13
+U 1 1 606926F1
+P 4900 2900
+F 0 "R13" V 4850 3100 50  0000 C CNN
+F 1 "22" V 4900 2900 50  0000 C CNN
+F 2 "" V 4830 2900 50  0001 C CNN
+F 3 "~" H 4900 2900 50  0001 C CNN
+	1    4900 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2900 5400 2900
+$Comp
+L Device:R R12
+U 1 1 60692CC7
+P 4900 2650
+F 0 "R12" V 4850 2850 50  0000 C CNN
+F 1 "22" V 4900 2650 50  0000 C CNN
+F 2 "" V 4830 2650 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2650 4600 2650
+$Comp
+L Device:R R11
+U 1 1 60693127
+P 4900 2550
+F 0 "R11" V 4850 2750 50  0000 C CNN
+F 1 "22" V 4900 2550 50  0000 C CNN
+F 2 "" V 4830 2550 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2550 4600 2550
+Wire Wire Line
+	3600 2650 3100 2650
+$Comp
+L Device:R R17
+U 1 1 6070C2A8
+P 11250 8400
+F 0 "R17" V 11200 8600 50  0000 C CNN
+F 1 "22" V 11250 8400 50  0000 C CNN
+F 2 "" V 11180 8400 50  0001 C CNN
+F 3 "~" H 11250 8400 50  0001 C CNN
+	1    11250 8400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 8400 11550 8400
+$Comp
+L Device:R R18
+U 1 1 60741E3A
+P 11250 8500
+F 0 "R18" V 11200 8700 50  0000 C CNN
+F 1 "22" V 11250 8500 50  0000 C CNN
+F 2 "" V 11180 8500 50  0001 C CNN
+F 3 "~" H 11250 8500 50  0001 C CNN
+	1    11250 8500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 8500 11550 8500
+$Comp
+L Device:R R15
+U 1 1 607BA8AF
+P 11250 7050
+F 0 "R15" V 11200 7250 50  0000 C CNN
+F 1 "22" V 11250 7050 50  0000 C CNN
+F 2 "" V 11180 7050 50  0001 C CNN
+F 3 "~" H 11250 7050 50  0001 C CNN
+	1    11250 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 7050 11550 7050
+$Comp
+L Device:R R16
+U 1 1 607BB020
+P 11250 7150
+F 0 "R16" V 11200 7350 50  0000 C CNN
+F 1 "22" V 11250 7150 50  0000 C CNN
+F 2 "" V 11180 7150 50  0001 C CNN
+F 3 "~" H 11250 7150 50  0001 C CNN
+	1    11250 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 7150 11550 7150
 $EndSCHEMATC
