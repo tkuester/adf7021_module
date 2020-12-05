@@ -1614,7 +1614,7 @@ Wire Wire Line
 Text GLabel 14050 4400 2    50   Input ~ 0
 FM_MOD
 Text Notes 2000 2900 0    30   ~ 0
-C9, C15, R10  are "multiplexer"\nparts. Place one.\n\nC9 - TXCO AC Input\nC15 - External AC Input\nR10 - External CMOS Input
+C9, C15, R10  are "multiplexer"\nparts. Place one.\n\nC9 - TCXO AC Input\nC15 - External AC Input\nR10 - External CMOS Input
 Wire Wire Line
 	1650 3250 2000 3250
 Wire Notes Line
@@ -2181,4 +2181,78 @@ Wire Wire Line
 	11600 3700 11600 3300
 Wire Wire Line
 	11050 3300 11600 3300
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 608F38E7
+P 14150 8200
+F 0 "H?" H 14250 8203 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14250 8158 50  0001 L CNN
+F 2 "" H 14150 8200 50  0001 C CNN
+F 3 "~" H 14150 8200 50  0001 C CNN
+	1    14150 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 608F437B
+P 14550 8200
+F 0 "H?" H 14650 8203 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14650 8158 50  0001 L CNN
+F 2 "" H 14550 8200 50  0001 C CNN
+F 3 "~" H 14550 8200 50  0001 C CNN
+	1    14550 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 608F497B
+P 14950 8200
+F 0 "H?" H 15050 8203 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15050 8158 50  0001 L CNN
+F 2 "" H 14950 8200 50  0001 C CNN
+F 3 "~" H 14950 8200 50  0001 C CNN
+	1    14950 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 608F4F4D
+P 15350 8200
+F 0 "H?" H 15450 8203 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15450 8158 50  0001 L CNN
+F 2 "" H 15350 8200 50  0001 C CNN
+F 3 "~" H 15350 8200 50  0001 C CNN
+	1    15350 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F5BFE
+P 14150 8500
+F 0 "#PWR?" H 14150 8250 50  0001 C CNN
+F 1 "GND" H 14155 8327 50  0000 C CNN
+F 2 "" H 14150 8500 50  0001 C CNN
+F 3 "" H 14150 8500 50  0001 C CNN
+	1    14150 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 8500 14150 8400
+Wire Wire Line
+	14150 8400 14550 8400
+Wire Wire Line
+	15350 8400 15350 8300
+Connection ~ 14150 8400
+Wire Wire Line
+	14150 8400 14150 8300
+Wire Wire Line
+	14950 8300 14950 8400
+Connection ~ 14950 8400
+Wire Wire Line
+	14950 8400 15350 8400
+Wire Wire Line
+	14550 8300 14550 8400
+Connection ~ 14550 8400
+Wire Wire Line
+	14550 8400 14950 8400
 $EndSCHEMATC
