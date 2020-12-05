@@ -792,8 +792,8 @@ U 1 1 6009402F
 P 1250 3250
 AR Path="/5FB73817/6009402F" Ref="X?"  Part="1" 
 AR Path="/6009402F" Ref="X1"  Part="1" 
-F 0 "X1" H 1694 3296 50  0000 L CNN
-F 1 "19.68MHz" H 1694 3205 50  0000 L CNN
+F 0 "X1" H 1350 3650 50  0000 L CNN
+F 1 "19.68MHz" H 1350 3550 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_Fordahl_DFAS2-4Pin_7.3x5.1mm" H 2350 2900 50  0001 C CNN
 F 3 "http://www.metatech.com.hk/product/fordahl/pdf/2002%20TCXO%20Page%2043-58.pdf" H 1150 3250 50  0001 C CNN
 	1    1250 3250
@@ -802,18 +802,16 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 60094035
-P 2250 3250
+P 2150 3250
 AR Path="/5FB73817/60094035" Ref="C?"  Part="1" 
 AR Path="/60094035" Ref="C9"  Part="1" 
-F 0 "C9" V 1998 3250 50  0000 C CNN
-F 1 "22p" V 2089 3250 50  0000 C CNN
-F 2 "" H 2288 3100 50  0001 C CNN
-F 3 "~" H 2250 3250 50  0001 C CNN
-	1    2250 3250
+F 0 "C9" V 1898 3250 50  0000 C CNN
+F 1 "22p" V 1989 3250 50  0000 C CNN
+F 2 "" H 2188 3100 50  0001 C CNN
+F 3 "~" H 2150 3250 50  0001 C CNN
+	1    2150 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1650 3250 2100 3250
 $Comp
 L power:+3V3 #PWR?
 U 1 1 6009403D
@@ -1180,8 +1178,6 @@ Connection ~ 8700 9550
 Wire Wire Line
 	9400 9150 9400 9550
 Connection ~ 9400 9550
-Text Notes 8750 8650 2    50   ~ 0
-3 dB @ 730 MHz
 Wire Notes Line
 	6700 1000 6700 5500
 Wire Notes Line
@@ -1194,24 +1190,24 @@ Text Notes 950  5950 0    150  Italic 30
 RF Section
 Text Notes 9900 4600 0    50   Italic 0
 Loop filter taken from EVAL-ADF7021DBZ3\nmodule. (For 431 MHz - 470 MHz)
-Text Notes 9300 6000 2    50   Italic 0
-Harmonic filter values taken from EVAL-ADF7021DBZ3\nmodule. (For 431 MHz - 470 MHz)
+Text Notes 7000 10050 0    50   Italic 0
+Harmonic filter values taken from EVAL-ADF7021DBZ3\nmodule. (For 431 MHz - 470 MHz)\n\n3 dB @ 730 MHz
 Text Notes 2000 9850 0    50   Italic 0
 Matching network taken from EVAL-ADF7021DBZ3\nmodule. (For 431 MHz - 470 MHz)
 $Comp
 L Device:C C?
 U 1 1 5FC62852
-P 2600 3500
+P 2450 3500
 AR Path="/5FB73817/5FC62852" Ref="C?"  Part="1" 
 AR Path="/5FC62852" Ref="C15"  Part="1" 
-F 0 "C15" V 2348 3500 50  0000 C CNN
-F 1 "22p" V 2439 3500 50  0000 C CNN
-F 2 "" H 2638 3350 50  0001 C CNN
-F 3 "~" H 2600 3500 50  0001 C CNN
-	1    2600 3500
+F 0 "C15" V 2198 3500 50  0000 C CNN
+F 1 "22p" V 2289 3500 50  0000 C CNN
+F 2 "" H 2488 3350 50  0001 C CNN
+F 3 "~" H 2450 3500 50  0001 C CNN
+	1    2450 3500
 	-1   0    0    1   
 $EndComp
-Text Notes 2550 4700 0    50   ~ 0
+Text Notes 2200 4350 0    50   ~ 0
 OSC1 - AC 0.8Vp-p\nOSC2 - CMOS
 $Comp
 L Device:R R?
@@ -1338,8 +1334,6 @@ Wire Wire Line
 Wire Wire Line
 	14400 4400 14700 4400
 Connection ~ 14400 4400
-Text Label 14700 4400 0    50   ~ 0
-FM_MOD
 Text Notes 14650 4200 0    50   ~ 0
 Input 3Vp-p\nSet deviation with R5
 $Comp
@@ -1470,8 +1464,6 @@ Connection ~ 8700 7650
 Wire Wire Line
 	9400 7250 9400 7650
 Connection ~ 9400 7650
-Text Notes 8750 6750 2    50   ~ 0
-3 dB @ 730 MHz
 Wire Wire Line
 	6000 7900 6000 7050
 Wire Wire Line
@@ -1480,11 +1472,11 @@ Connection ~ 7300 7050
 Wire Wire Line
 	1250 7850 1250 10150
 Wire Wire Line
-	1250 10150 6050 10150
+	1250 10150 5800 10150
 Wire Wire Line
-	6050 10150 6050 8950
+	5800 10150 5800 8950
 Wire Wire Line
-	6050 8950 6450 8950
+	5800 8950 6450 8950
 Connection ~ 7300 8950
 Wire Wire Line
 	6850 8950 7300 8950
@@ -1571,21 +1563,21 @@ Wire Wire Line
 Connection ~ 9000 7050
 Wire Wire Line
 	9000 7050 8700 7050
-Text Notes 6350 10150 0    50   ~ 0
-C26, C27, C30 are "multiplexer"\nDC blocking caps. Place one.
-Text Notes 5850 6000 0    50   ~ 0
-C18, C19 are "multiplexer"\nDC blocking caps. Place one.
+Text Notes 6100 9650 0    30   ~ 0
+C26, C27, C30 are "multiplexer"\nDC blocking caps. Place one.\n\nC26 - Shared Tx/Rx\nC27 - Bypass Rx\nC30 - Filter Rx
+Text Notes 5800 6100 0    30   ~ 0
+C18, C19 are "multiplexer"\nDC blocking caps. Place one.\n\nC18 - Bypass\nC19 - Filter output
 Wire Wire Line
-	2600 3250 3600 3250
+	2450 3250 3600 3250
 Wire Wire Line
-	2400 3250 2600 3250
-Connection ~ 2600 3250
+	2300 3250 2450 3250
+Connection ~ 2450 3250
 Wire Wire Line
-	2600 3350 2600 3250
+	2450 3350 2450 3250
 Wire Wire Line
-	2600 3650 2600 3750
+	2450 3650 2450 3750
 Wire Wire Line
-	2600 3750 2000 3750
+	2450 3750 2000 3750
 Text GLabel 2000 3750 0    50   Input ~ 0
 CLK_AC_IN
 Text GLabel 3250 3000 0    50   Input ~ 0
@@ -1632,4 +1624,46 @@ Wire Wire Line
 	4850 3000 4600 3000
 Wire Wire Line
 	4600 2900 4850 2900
+Text GLabel 2000 3950 0    50   Input ~ 0
+CLK_DC_IN
+Wire Wire Line
+	2000 3950 2850 3950
+Wire Wire Line
+	2850 3950 2850 3350
+Wire Wire Line
+	2850 3350 3600 3350
+Text GLabel 14700 4400 2    50   Input ~ 0
+FM_MOD
+Text Notes 2000 2900 0    30   ~ 0
+C9, C15 are "multiplexer"\nDC blocking caps. Place one.\n\nC9 - TXCO Input\nC15 - External Input
+Wire Wire Line
+	1650 3250 2000 3250
+Wire Notes Line
+	1950 3650 2750 3650
+Wire Notes Line
+	2750 3650 2750 2950
+Wire Notes Line
+	2750 2950 1950 2950
+Wire Notes Line
+	1950 2950 1950 3650
+Wire Notes Line
+	5800 6150 5800 7200
+Wire Notes Line
+	5800 7200 6500 7200
+Wire Notes Line
+	6500 7200 6500 6150
+Wire Notes Line
+	6500 6150 5800 6150
+Wire Notes Line
+	6100 8100 6100 9300
+Wire Notes Line
+	6100 9300 6850 9300
+Wire Notes Line
+	6850 9300 6850 8100
+Wire Notes Line
+	6850 8100 6100 8100
+Text Label 1500 7850 0    50   ~ 0
+RFIN
+Text Label 5150 7900 0    50   ~ 0
+RFOUT
 $EndSCHEMATC
