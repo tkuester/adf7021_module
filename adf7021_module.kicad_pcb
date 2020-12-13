@@ -1533,7 +1533,7 @@
   )
 
   (module Connector_Coaxial:SMA_Molex_73251-2200_Horizontal (layer F.Cu) (tedit 5C07CA7C) (tstamp 5FCD982D)
-    (at 110 65.5 90)
+    (at 111 65.5 90)
     (descr https://www.molex.com/webdocs/datasheets/pdf/en-us/0732512200_RF_COAX_CONNECTORS.pdf)
     (tags "SMA THT Female Jack Horizontal")
     (path /600940EB)
@@ -1592,7 +1592,7 @@
   )
 
   (module Connector_Coaxial:SMA_Molex_73251-2200_Horizontal (layer F.Cu) (tedit 5C07CA7C) (tstamp 5FCD9807)
-    (at 110 49.5 90)
+    (at 111 49.5 90)
     (descr https://www.molex.com/webdocs/datasheets/pdf/en-us/0732512200_RF_COAX_CONNECTORS.pdf)
     (tags "SMA THT Female Jack Horizontal")
     (path /5FCC5E86)
