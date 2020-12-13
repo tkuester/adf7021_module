@@ -1570,7 +1570,7 @@ MUXOUT
 Text GLabel 6150 3200 2    50   Output ~ 0
 CLKOUT
 Wire Wire Line
-	4600 3100 5150 3100
+	4600 3100 4700 3100
 Wire Wire Line
 	3450 3350 3600 3350
 Text GLabel 14050 4400 2    50   Input ~ 0
@@ -1824,8 +1824,6 @@ Wire Wire Line
 Connection ~ 14000 1550
 Wire Wire Line
 	14000 1550 14400 1550
-Wire Wire Line
-	5450 3100 6150 3100
 $Comp
 L Oscillator:DFA-S2 X?
 U 1 1 6009402F
@@ -1842,12 +1840,12 @@ $EndComp
 $Comp
 L Device:R_Pack04_Split RN1
 U 1 1 5FDA405B
-P 5300 3100
-F 0 "RN1" V 5250 3350 50  0000 C CNN
-F 1 "22" V 5300 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 5575 3100 50  0001 C CNN
-F 3 "~" H 5300 3100 50  0001 C CNN
-	1    5300 3100
+P 5300 3200
+F 0 "RN1" V 5250 3450 50  0000 C CNN
+F 1 "22" V 5300 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 5575 3200 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5300 3200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1899,12 +1897,12 @@ $EndComp
 $Comp
 L Device:R R13
 U 1 1 606926F1
-P 4850 3200
-F 0 "R13" V 4800 3400 50  0000 C CNN
-F 1 "1k" V 4850 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4780 3200 50  0001 C CNN
-F 3 "~" H 4850 3200 50  0001 C CNN
-	1    4850 3200
+P 4850 3100
+F 0 "R13" V 4800 3300 50  0000 C CNN
+F 1 "22" V 4850 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4780 3100 50  0001 C CNN
+F 3 "~" H 4850 3100 50  0001 C CNN
+	1    4850 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1920,11 +1918,7 @@ Wire Notes Line
 Wire Notes Line
 	5700 2450 5150 2450
 Wire Wire Line
-	4700 3200 4600 3200
-Wire Wire Line
 	4600 3000 5150 3000
-Wire Wire Line
-	5000 3200 6150 3200
 $Comp
 L Connector_Generic:Conn_02x10_Top_Bottom J1
 U 1 1 60104CEE
@@ -1936,7 +1930,7 @@ F 3 "~" H 13550 7300 50  0001 C CNN
 	1    13550 7300
 	1    0    0    -1  
 $EndComp
-Text GLabel 14150 7700 2    50   Input ~ 0
+Text GLabel 14150 7600 2    50   Input ~ 0
 ADCIN
 Text GLabel 14150 7200 2    50   BiDi ~ 0
 TxRxData
@@ -1944,7 +1938,7 @@ Text GLabel 14150 7100 2    50   Output ~ 0
 TxRxCLK
 Text GLabel 14150 7300 2    50   Output ~ 0
 SREAD
-Text GLabel 14150 7600 2    50   Output ~ 0
+Text GLabel 14150 7700 2    50   Output ~ 0
 SWD
 Text GLabel 14150 7500 2    50   Output ~ 0
 MUXOUT
@@ -2265,7 +2259,7 @@ Wire Wire Line
 	11850 8700 13350 8700
 Wire Wire Line
 	11850 8600 13350 8600
-Text GLabel 14150 9100 2    50   Input ~ 0
+Text GLabel 14150 9000 2    50   Input ~ 0
 ADCIN
 Text GLabel 14150 8600 2    50   BiDi ~ 0
 TxRxData
@@ -2273,7 +2267,7 @@ Text GLabel 14150 8500 2    50   Output ~ 0
 TxRxCLK
 Text GLabel 14150 8700 2    50   Output ~ 0
 SREAD
-Text GLabel 14150 9000 2    50   Output ~ 0
+Text GLabel 14150 9100 2    50   Output ~ 0
 SWD
 Text GLabel 14150 8900 2    50   Output ~ 0
 MUXOUT
@@ -2342,8 +2336,8 @@ L Connector:Conn_Coaxial J?
 U 1 1 5FEAE683
 P 9750 8450
 AR Path="/5FB73817/5FEAE683" Ref="J?"  Part="1" 
-AR Path="/5FEAE683" Ref="J?"  Part="1" 
-F 0 "J?" H 9678 8688 50  0000 C CNN
+AR Path="/5FEAE683" Ref="J6"  Part="1" 
+F 0 "J6" H 9678 8688 50  0000 C CNN
 F 1 "Conn_Coaxial" H 9678 8597 50  0000 C CNN
 F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 9750 8450 50  0001 C CNN
 F 3 " ~" H 9750 8450 50  0001 C CNN
@@ -2368,8 +2362,8 @@ L Connector:Conn_Coaxial J?
 U 1 1 5FEE7F8C
 P 9700 6500
 AR Path="/5FB73817/5FEE7F8C" Ref="J?"  Part="1" 
-AR Path="/5FEE7F8C" Ref="J?"  Part="1" 
-F 0 "J?" H 9628 6738 50  0000 C CNN
+AR Path="/5FEE7F8C" Ref="J5"  Part="1" 
+F 0 "J5" H 9628 6738 50  0000 C CNN
 F 1 "Conn_Coaxial" H 9628 6647 50  0000 C CNN
 F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 9700 6500 50  0001 C CNN
 F 3 " ~" H 9700 6500 50  0001 C CNN
@@ -2387,4 +2381,10 @@ Wire Wire Line
 	8700 7050 9200 7050
 Wire Wire Line
 	6400 6500 9500 6500
+Wire Wire Line
+	5450 3200 6150 3200
+Wire Wire Line
+	5000 3100 6150 3100
+Wire Wire Line
+	4600 3200 5150 3200
 $EndSCHEMATC
