@@ -1111,7 +1111,7 @@ F 3 "" H 9400 9700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 9700 9400 9550
+	9400 9700 9400 9650
 Wire Wire Line
 	8700 9550 8000 9550
 Wire Wire Line
@@ -1151,8 +1151,6 @@ F 3 " ~" H 9400 8950 50  0001 C CNN
 	1    9400 8950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 8950 9000 8950
 Connection ~ 8700 8950
 Wire Wire Line
 	8700 9550 9400 9550
@@ -1388,7 +1386,7 @@ F 3 "" H 9400 7800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 7800 9400 7650
+	9400 7800 9400 7750
 Wire Wire Line
 	8700 7650 8000 7650
 Wire Wire Line
@@ -1428,8 +1426,6 @@ F 3 " ~" H 9400 7050 50  0001 C CNN
 	1    9400 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 7050 9000 7050
 Connection ~ 8700 7050
 Wire Wire Line
 	8700 7650 9400 7650
@@ -1506,11 +1502,6 @@ Wire Wire Line
 	6450 8550 6450 8950
 Wire Wire Line
 	6850 8550 9000 8550
-Wire Wire Line
-	9000 8550 9000 8950
-Connection ~ 9000 8950
-Wire Wire Line
-	9000 8950 8700 8950
 $Comp
 L Device:C C?
 U 1 1 5FD91436
@@ -1529,13 +1520,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 6500 6100 6500
 Connection ~ 6000 7050
-Wire Wire Line
-	6400 6500 9000 6500
-Wire Wire Line
-	9000 6500 9000 7050
-Connection ~ 9000 7050
-Wire Wire Line
-	9000 7050 8700 7050
 Text Notes 6100 9650 0    30   ~ 0
 C26, C27, C30 are "multiplexer"\nDC blocking caps. Place one.\n\nC26 - Shared Tx/Rx\nC27 - Bypass Rx\nC30 - Filter Rx
 Text Notes 5800 6100 0    30   ~ 0
@@ -2353,4 +2337,54 @@ $EndComp
 Wire Wire Line
 	3550 7900 3850 7900
 Connection ~ 3850 7900
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5FEAE683
+P 9750 8450
+AR Path="/5FB73817/5FEAE683" Ref="J?"  Part="1" 
+AR Path="/5FEAE683" Ref="J?"  Part="1" 
+F 0 "J?" H 9678 8688 50  0000 C CNN
+F 1 "Conn_Coaxial" H 9678 8597 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 9750 8450 50  0001 C CNN
+F 3 " ~" H 9750 8450 50  0001 C CNN
+	1    9750 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 8950 9200 8950
+Wire Wire Line
+	9550 8450 9000 8450
+Wire Wire Line
+	9000 8450 9000 8550
+Wire Wire Line
+	9750 8650 9750 9650
+Wire Wire Line
+	9750 9650 9400 9650
+Connection ~ 9400 9650
+Wire Wire Line
+	9400 9650 9400 9550
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5FEE7F8C
+P 9700 6500
+AR Path="/5FB73817/5FEE7F8C" Ref="J?"  Part="1" 
+AR Path="/5FEE7F8C" Ref="J?"  Part="1" 
+F 0 "J?" H 9628 6738 50  0000 C CNN
+F 1 "Conn_Coaxial" H 9628 6647 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 9700 6500 50  0001 C CNN
+F 3 " ~" H 9700 6500 50  0001 C CNN
+	1    9700 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 7750 9700 7750
+Wire Wire Line
+	9700 7750 9700 6700
+Connection ~ 9400 7750
+Wire Wire Line
+	9400 7750 9400 7650
+Wire Wire Line
+	8700 7050 9200 7050
+Wire Wire Line
+	6400 6500 9500 6500
 $EndSCHEMATC
