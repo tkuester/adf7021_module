@@ -395,7 +395,7 @@
     (tags "capacitor handsolder")
     (path /5FD75D2C)
     (attr smd)
-    (fp_text reference C27 (at 2.2 0 90) (layer F.SilkS)
+    (fp_text reference C27 (at 2.3 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 4.7p (at 0 1.16 90) (layer F.Fab)
@@ -711,7 +711,7 @@
     (tags "SMD SMT crystal oscillator")
     (path /6009402F)
     (attr smd)
-    (fp_text reference X1 (at 4.7 1.75 90) (layer F.SilkS)
+    (fp_text reference X1 (at -4.55 -2 90) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 19.68MHz (at 0 4.2) (layer F.Fab)
@@ -1019,7 +1019,7 @@
     (tags "resistor handsolder")
     (path /60093FB9)
     (attr smd)
-    (fp_text reference R9 (at 0 1.2) (layer F.SilkS)
+    (fp_text reference R9 (at 2.1 0) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 3.6k (at 0 1.17) (layer F.Fab)
@@ -1055,7 +1055,7 @@
     (tags "resistor handsolder")
     (path /60093FB3)
     (attr smd)
-    (fp_text reference R8 (at 0 -1) (layer F.SilkS)
+    (fp_text reference R8 (at 2.1 0) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 1.1k (at 0 1.17) (layer F.Fab)
@@ -1091,7 +1091,7 @@
     (tags "resistor handsolder")
     (path /5FD41903)
     (attr smd)
-    (fp_text reference R7 (at 0 -1.17) (layer F.SilkS)
+    (fp_text reference R7 (at 0 -1.17) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 22k (at 0 1.17) (layer F.Fab)
@@ -1127,7 +1127,7 @@
     (tags "resistor handsolder")
     (path /5FD41385)
     (attr smd)
-    (fp_text reference R6 (at -2 0 90) (layer F.SilkS)
+    (fp_text reference R6 (at -2 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 47k (at 0 1.17 90) (layer F.Fab)
@@ -1163,7 +1163,7 @@
     (tags "resistor handsolder")
     (path /5FD0CF8B)
     (attr smd)
-    (fp_text reference R5 (at 0 -1.17) (layer F.SilkS)
+    (fp_text reference R5 (at 0 -1.17) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 47k (at 0 1.17) (layer F.Fab)
@@ -1199,7 +1199,7 @@
     (tags "resistor handsolder")
     (path /5FD0CAC2)
     (attr smd)
-    (fp_text reference R4 (at 4.9025 -0.4 90) (layer F.SilkS)
+    (fp_text reference R4 (at 4.9025 -0.4 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100 (at 0 1.17 90) (layer F.Fab)
@@ -1235,7 +1235,7 @@
     (tags "resistor handsolder")
     (path /60094013)
     (attr smd)
-    (fp_text reference R3 (at 5.6 -0.4 90) (layer F.SilkS)
+    (fp_text reference R3 (at 5.6 -0.4 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 2 (at 0 1.17 90) (layer F.Fab)
@@ -1271,7 +1271,7 @@
     (tags "resistor handsolder")
     (path /60093F2C)
     (attr smd)
-    (fp_text reference R2 (at 4.9025 -0.3 90) (layer F.SilkS)
+    (fp_text reference R2 (at 4.9025 -0.3 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 560 (at 0 1.17 90) (layer F.Fab)
@@ -1307,7 +1307,7 @@
     (tags "resistor handsolder")
     (path /60093F20)
     (attr smd)
-    (fp_text reference R1 (at 4.9 -0.1 90) (layer F.SilkS)
+    (fp_text reference R1 (at 4.9 -0.1 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 270 (at 0 1.17 90) (layer F.Fab)
@@ -1451,7 +1451,7 @@
     (tags "inductor handsolder")
     (path /6009405C)
     (attr smd)
-    (fp_text reference L4 (at 0 -1.17 90) (layer F.SilkS)
+    (fp_text reference L4 (at 0 1.05 90) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 13n (at 0 1.17 90) (layer F.Fab)
@@ -1895,7 +1895,7 @@
     (tags "capacitor handsolder")
     (path /60543F9A)
     (attr smd)
-    (fp_text reference C36 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C36 (at 2.2 0 180) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 1u (at 0 1.43 90) (layer F.Fab)
@@ -1925,13 +1925,13 @@
     )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder (layer F.Cu) (tedit 5F68FEEF) (tstamp 5FCD9765)
+  (module Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder (layer F.Cu) (tedit 5F68FEEF) (tstamp 5FD8891A)
     (at 138.75 67.5 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /60543C1C)
     (attr smd)
-    (fp_text reference C35 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C35 (at 0 -1.43 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 4.7u (at 0 1.43 90) (layer F.Fab)
@@ -1967,7 +1967,7 @@
     (tags "capacitor handsolder")
     (path /605431F6)
     (attr smd)
-    (fp_text reference C34 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C34 (at 2.3 0 180) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10u (at 0 1.43 90) (layer F.Fab)
@@ -2111,7 +2111,7 @@
     (tags "capacitor handsolder")
     (path /600940B0)
     (attr smd)
-    (fp_text reference C30 (at -1 1.2 180) (layer F.SilkS)
+    (fp_text reference C30 (at -1.1 1.1 180) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 4.7p (at 0 1.16) (layer F.Fab)
@@ -2147,7 +2147,7 @@
     (tags "capacitor handsolder")
     (path /60093FCC)
     (attr smd)
-    (fp_text reference C29 (at 0 -1.2 90) (layer F.SilkS)
+    (fp_text reference C29 (at 0 -1.2 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.16 90) (layer F.Fab)
@@ -2183,7 +2183,7 @@
     (tags "capacitor handsolder")
     (path /5FD4E4A2)
     (attr smd)
-    (fp_text reference C26 (at 1 -1 270) (layer F.SilkS)
+    (fp_text reference C26 (at 1 -1.1 270) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 4.7p (at 0 1.16 90) (layer F.Fab)
@@ -2399,7 +2399,7 @@
     (tags "capacitor handsolder")
     (path /60093FA3)
     (attr smd)
-    (fp_text reference C20 (at 0 1 90) (layer F.SilkS)
+    (fp_text reference C20 (at 0 1 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10n (at 0.1 1 90) (layer F.Fab)
@@ -2435,7 +2435,7 @@
     (tags "capacitor handsolder")
     (path /60094089)
     (attr smd)
-    (fp_text reference C19 (at 0 -1.16) (layer F.SilkS)
+    (fp_text reference C19 (at -1.1675 -1.16) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10p (at 0 1.16) (layer F.Fab)
@@ -2471,7 +2471,7 @@
     (tags "capacitor handsolder")
     (path /5FD91436)
     (attr smd)
-    (fp_text reference C18 (at 0 -1.16 90) (layer F.SilkS)
+    (fp_text reference C18 (at -2.3 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10p (at 0 1.16 90) (layer F.Fab)
@@ -2507,7 +2507,7 @@
     (tags "capacitor handsolder")
     (path /5FD40D6A)
     (attr smd)
-    (fp_text reference C17 (at 0 -1.16) (layer F.SilkS)
+    (fp_text reference C17 (at 0 -1.16) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 2.2n (at 0 1.16) (layer F.Fab)
@@ -2543,7 +2543,7 @@
     (tags "capacitor handsolder")
     (path /5FD40884)
     (attr smd)
-    (fp_text reference C16 (at 0 -1.16) (layer F.SilkS)
+    (fp_text reference C16 (at 0 -1.16) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.16) (layer F.Fab)
@@ -2615,7 +2615,7 @@
     (tags "capacitor handsolder")
     (path /60093F0C)
     (attr smd)
-    (fp_text reference C14 (at 2.4 0 90) (layer F.SilkS)
+    (fp_text reference C14 (at 2.4 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.16 90) (layer F.Fab)
@@ -2651,7 +2651,7 @@
     (tags "capacitor handsolder")
     (path /60094019)
     (attr smd)
-    (fp_text reference C13 (at 5.2 -0.4 90) (layer F.SilkS)
+    (fp_text reference C13 (at 5.2 -0.4 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.16 90) (layer F.Fab)
@@ -2687,7 +2687,7 @@
     (tags "capacitor handsolder")
     (path /60093F32)
     (attr smd)
-    (fp_text reference C12 (at 4.7 -0.3 90) (layer F.SilkS)
+    (fp_text reference C12 (at 4.7 -0.3 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 470p (at 0 1.16 90) (layer F.Fab)
@@ -2723,7 +2723,7 @@
     (tags "capacitor handsolder")
     (path /60093F26)
     (attr smd)
-    (fp_text reference C11 (at 4.7 -0.1 90) (layer F.SilkS)
+    (fp_text reference C11 (at 4.7 -0.1 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 15n (at 0 1.16 90) (layer F.Fab)
@@ -2759,7 +2759,7 @@
     (tags "capacitor handsolder")
     (path /60093F1A)
     (attr smd)
-    (fp_text reference C10 (at 2.4 0 90) (layer F.SilkS)
+    (fp_text reference C10 (at 2.4 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 1n (at 0 1.16 90) (layer F.Fab)
@@ -2831,7 +2831,7 @@
     (tags "capacitor handsolder")
     (path /60094043)
     (attr smd)
-    (fp_text reference C8 (at 0.6325 1.2 90) (layer F.SilkS)
+    (fp_text reference C8 (at 1.9325 0 90) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10n (at 0 1.16 90) (layer F.Fab)
@@ -2867,7 +2867,7 @@
     (tags "capacitor handsolder")
     (path /60093F04)
     (attr smd)
-    (fp_text reference C7 (at 0.4 6) (layer F.SilkS)
+    (fp_text reference C7 (at 0.4 6) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 22n (at 0 1.16) (layer F.Fab)
@@ -2903,7 +2903,7 @@
     (tags "capacitor handsolder")
     (path /60093EBC)
     (attr smd)
-    (fp_text reference C6 (at 2 0 90) (layer F.SilkS)
+    (fp_text reference C6 (at 2 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10n (at 0 1.16 90) (layer F.Fab)
@@ -2975,7 +2975,7 @@
     (tags "capacitor handsolder")
     (path /60093F72)
     (attr smd)
-    (fp_text reference C4 (at 3.7 -1 90) (layer F.SilkS)
+    (fp_text reference C4 (at 3.7 -1 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100p (at 0 1.16 90) (layer F.Fab)
@@ -3011,7 +3011,7 @@
     (tags "capacitor handsolder")
     (path /60093F6C)
     (attr smd)
-    (fp_text reference C3 (at 3.7 -1 90) (layer F.SilkS)
+    (fp_text reference C3 (at 3.7 -1 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.16 90) (layer F.Fab)
@@ -3047,7 +3047,7 @@
     (tags "capacitor handsolder")
     (path /60093F5D)
     (attr smd)
-    (fp_text reference C2 (at 2 0 90) (layer F.SilkS)
+    (fp_text reference C2 (at 2 0 90) (layer F.SilkS) hide
       (effects (font (size 0.75 0.75) (thickness 0.15)))
     )
     (fp_text value 10n (at 0 1.16 90) (layer F.Fab)
