@@ -733,7 +733,7 @@ P 14150 3050
 AR Path="/5FB73817/60094013" Ref="R?"  Part="1" 
 AR Path="/60094013" Ref="R3"  Part="1" 
 F 0 "R3" H 14220 3096 50  0000 L CNN
-F 1 "2" H 14220 3005 50  0000 L CNN
+F 1 "2R" H 14220 3005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 14080 3050 50  0001 C CNN
 F 3 "~" H 14150 3050 50  0001 C CNN
 	1    14150 3050
@@ -797,62 +797,6 @@ F 3 "~" H 3500 3300 50  0001 C CNN
 	1    3500 3300
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 6009403D
-P 1600 2350
-AR Path="/5FB73817/6009403D" Ref="#PWR?"  Part="1" 
-AR Path="/6009403D" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 1600 2200 50  0001 C CNN
-F 1 "+3V3" H 1615 2523 50  0000 C CNN
-F 2 "" H 1600 2350 50  0001 C CNN
-F 3 "" H 1600 2350 50  0001 C CNN
-	1    1600 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60094043
-P 1600 2650
-AR Path="/5FB73817/60094043" Ref="C?"  Part="1" 
-AR Path="/60094043" Ref="C8"  Part="1" 
-F 0 "C8" H 1715 2696 50  0000 L CNN
-F 1 "10n" H 1715 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 1638 2500 50  0001 C CNN
-F 3 "~" H 1600 2650 50  0001 C CNN
-	1    1600 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 2500 1600 2450
-Wire Wire Line
-	1600 2450 2000 2450
-Wire Wire Line
-	2000 2450 2000 3000
-Connection ~ 1600 2450
-Wire Wire Line
-	1600 2450 1600 2350
-$Comp
-L power:GND #PWR?
-U 1 1 6009404E
-P 1600 3800
-AR Path="/5FB73817/6009404E" Ref="#PWR?"  Part="1" 
-AR Path="/6009404E" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 1600 3550 50  0001 C CNN
-F 1 "GND" H 1605 3627 50  0000 C CNN
-F 2 "" H 1600 3800 50  0001 C CNN
-F 3 "" H 1600 3800 50  0001 C CNN
-	1    1600 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3600 2000 3700
-Wire Wire Line
-	2000 3700 1600 3700
-Wire Wire Line
-	1600 3700 1600 3800
-Wire Wire Line
-	1600 3300 1700 3300
 $Comp
 L Device:L L?
 U 1 1 6009405C
@@ -1030,12 +974,10 @@ Wire Notes Line
 	8150 950  8150 5450
 Wire Notes Line
 	850  5500 15750 5500
-Text Notes 950  5300 0    150  Italic 30
+Text Notes 1000 1200 0    150  Italic 30
 Digital Section
-Text Notes 8350 5200 0    150  Italic 30
+Text Notes 11050 1200 0    150  Italic 30
 Analog Section
-Text Notes 950  5950 0    150  Italic 30
-RF Section
 Text Notes 10850 4550 0    50   Italic 0
 Loop filter taken from EVAL-ADF7021DBZ3\nmodule. (For 431 MHz - 470 MHz)
 Text Notes 8200 10800 0    50   Italic 0
@@ -1372,8 +1314,6 @@ Text GLabel 15000 4350 2    50   Input ~ 0
 FM_MOD
 Text Notes 3350 2950 0    30   ~ 0
 C9, C15, R10  are "multiplexer"\nparts. Place one.\n\nC9 - TCXO AC Input\nC15 - External AC Input\nR10 - External CMOS Input
-Wire Wire Line
-	2400 3300 3350 3300
 Text Label 1500 7850 0    50   ~ 0
 RFIN
 Text Label 3650 7900 0    50   ~ 0
@@ -1581,19 +1521,6 @@ Wire Wire Line
 Connection ~ 14050 1000
 Wire Wire Line
 	14050 1000 14450 1000
-$Comp
-L Oscillator:DFA-S2 X?
-U 1 1 6009402F
-P 2000 3300
-AR Path="/5FB73817/6009402F" Ref="X?"  Part="1" 
-AR Path="/6009402F" Ref="X1"  Part="1" 
-F 0 "X1" H 2100 3700 50  0000 L CNN
-F 1 "19.68MHz" H 2100 3600 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering" H 3100 2950 50  0001 C CNN
-F 3 "http://www.metatech.com.hk/product/fordahl/pdf/2002%20TCXO%20Page%2043-58.pdf" H 1900 3300 50  0001 C CNN
-	1    2000 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Pack04_Split RN1
 U 1 1 5FDA405B
@@ -2399,35 +2326,8 @@ F 3 "~" H 9250 7350 50  0001 C CNN
 $EndComp
 Text GLabel 8950 7350 0    50   Input ~ 0
 CLK_SMA
-Text GLabel 950  4550 0    50   Input ~ 0
+Text GLabel 950  4650 0    50   Input ~ 0
 CLK_SMA
-$Comp
-L Device:R R11
-U 1 1 600830E3
-P 2850 3800
-F 0 "R11" V 2750 3800 50  0000 C CNN
-F 1 "0" V 2850 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2780 3800 50  0001 C CNN
-F 3 "~" H 2850 3800 50  0001 C CNN
-	1    2850 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 600833D4
-P 3050 4000
-F 0 "R12" H 2900 3950 50  0000 C CNN
-F 1 "DNP" H 2900 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2980 4000 50  0001 C CNN
-F 3 "~" H 3050 4000 50  0001 C CNN
-	1    3050 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3050 3800 3050 3850
-Connection ~ 3050 3800
-Wire Wire Line
-	3050 3800 3000 3800
 Text Notes 13900 9600 0    50   ~ 0
 Careful - pin numbers differ\nbetwen connectors
 Wire Wire Line
@@ -2446,42 +2346,12 @@ Text GLabel 13950 7900 0    50   Input ~ 0
 VCO_MOD
 Wire Wire Line
 	13950 7900 14250 7900
-Text GLabel 950  4250 0    50   Input ~ 0
+Text GLabel 950  4150 0    50   Input ~ 0
 VCO_MOD
-$Comp
-L power:GND #PWR?
-U 1 1 60185FA7
-P 1600 2850
-AR Path="/5FB73817/60185FA7" Ref="#PWR?"  Part="1" 
-AR Path="/60185FA7" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 1600 2600 50  0001 C CNN
-F 1 "GND" H 1605 2677 50  0000 C CNN
-F 2 "" H 1600 2850 50  0001 C CNN
-F 3 "" H 1600 2850 50  0001 C CNN
-	1    1600 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1600 2850 1600 2800
-$Comp
-L Device:R R17
-U 1 1 601A2851
-P 1600 3500
-F 0 "R17" H 1500 3450 50  0000 C CNN
-F 1 "0R" H 1500 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1530 3500 50  0001 C CNN
-F 3 "~" H 1600 3500 50  0001 C CNN
-	1    1600 3500
-	1    0    0    1   
-$EndComp
+	950  4150 1050 4150
 Wire Wire Line
-	1600 3700 1600 3650
-Wire Wire Line
-	1600 3300 1500 3300
-Wire Wire Line
-	1600 3350 1600 3300
-Connection ~ 1600 3700
-Connection ~ 1600 3300
+	950  4650 2500 4650
 $Comp
 L Device:R R16
 U 1 1 601BDF27
@@ -2494,19 +2364,208 @@ F 3 "~" H 1350 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	950  4550 3050 4550
+	1050 3300 1200 3300
+$Comp
+L Device:R R12
+U 1 1 600833D4
+P 2650 4650
+F 0 "R12" V 2750 4750 50  0000 C CNN
+F 1 "DNP" V 2750 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2580 4650 50  0001 C CNN
+F 3 "~" H 2650 4650 50  0001 C CNN
+	1    2650 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 600830E3
+P 2650 4400
+F 0 "R11" V 2550 4300 50  0000 C CNN
+F 1 "0R" V 2550 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2580 4400 50  0001 C CNN
+F 3 "~" H 2650 4400 50  0001 C CNN
+	1    2650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6009403D
+P 2000 2350
+AR Path="/5FB73817/6009403D" Ref="#PWR?"  Part="1" 
+AR Path="/6009403D" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2000 2200 50  0001 C CNN
+F 1 "+3V3" H 2015 2523 50  0000 C CNN
+F 2 "" H 2000 2350 50  0001 C CNN
+F 3 "" H 2000 2350 50  0001 C CNN
+	1    2000 2350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3050 4150 3050 4550
+	2000 2500 2000 2450
+Wire Wire Line
+	2000 2450 2400 2450
+Wire Wire Line
+	2400 2450 2400 3000
+Connection ~ 2000 2450
+Wire Wire Line
+	2000 2450 2000 2350
+Wire Wire Line
+	2000 3300 2100 3300
+Wire Wire Line
+	2800 3300 3350 3300
+$Comp
+L Oscillator:DFA-S2 X?
+U 1 1 6009402F
+P 2400 3300
+AR Path="/5FB73817/6009402F" Ref="X?"  Part="1" 
+AR Path="/6009402F" Ref="X1"  Part="1" 
+F 0 "X1" H 2500 3700 50  0000 L CNN
+F 1 "12.288MHz" H 2500 3600 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering" H 3500 2950 50  0001 C CNN
+F 3 "http://www.metatech.com.hk/product/fordahl/pdf/2002%20TCXO%20Page%2043-58.pdf" H 2300 3300 50  0001 C CNN
+	1    2400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60185FA7
+P 2000 2850
+AR Path="/5FB73817/60185FA7" Ref="#PWR?"  Part="1" 
+AR Path="/60185FA7" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 2000 2600 50  0001 C CNN
+F 1 "GND" H 2005 2677 50  0000 C CNN
+F 2 "" H 2000 2850 50  0001 C CNN
+F 3 "" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2850 2000 2800
+Connection ~ 2000 3300
+$Comp
+L Device:C C?
+U 1 1 60223E6F
+P 2000 3550
+AR Path="/5FB73817/60223E6F" Ref="C?"  Part="1" 
+AR Path="/60223E6F" Ref="C37"  Part="1" 
+F 0 "C37" H 2115 3596 50  0000 L CNN
+F 1 "10n" H 2115 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2038 3400 50  0001 C CNN
+F 3 "~" H 2000 3550 50  0001 C CNN
+	1    2000 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60094043
+P 2000 2650
+AR Path="/5FB73817/60094043" Ref="C?"  Part="1" 
+AR Path="/60094043" Ref="C8"  Part="1" 
+F 0 "C8" H 2115 2696 50  0000 L CNN
+F 1 "10n" H 2115 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2038 2500 50  0001 C CNN
+F 3 "~" H 2000 2650 50  0001 C CNN
+	1    2000 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60242C3E
+P 2000 3750
+AR Path="/5FB73817/60242C3E" Ref="#PWR?"  Part="1" 
+AR Path="/60242C3E" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 2000 3500 50  0001 C CNN
+F 1 "GND" H 2005 3577 50  0000 C CNN
+F 2 "" H 2000 3750 50  0001 C CNN
+F 3 "" H 2000 3750 50  0001 C CNN
+	1    2000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60242E6A
+P 2400 3750
+AR Path="/5FB73817/60242E6A" Ref="#PWR?"  Part="1" 
+AR Path="/60242E6A" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 2400 3500 50  0001 C CNN
+F 1 "GND" H 2405 3577 50  0000 C CNN
+F 2 "" H 2400 3750 50  0001 C CNN
+F 3 "" H 2400 3750 50  0001 C CNN
+	1    2400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3600 2400 3750
+Wire Wire Line
+	2000 3750 2000 3700
+Wire Wire Line
+	2000 3300 2000 3400
+$Comp
+L power:GND #PWR?
+U 1 1 6009404E
+P 1600 3750
+AR Path="/5FB73817/6009404E" Ref="#PWR?"  Part="1" 
+AR Path="/6009404E" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 1600 3500 50  0001 C CNN
+F 1 "GND" H 1605 3577 50  0000 C CNN
+F 2 "" H 1600 3750 50  0001 C CNN
+F 3 "" H 1600 3750 50  0001 C CNN
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 601A2851
+P 1600 3550
+F 0 "R17" H 1450 3500 50  0000 C CNN
+F 1 "0R" H 1450 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1530 3550 50  0001 C CNN
+F 3 "~" H 1600 3550 50  0001 C CNN
+	1    1600 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3700 1600 3750
+Wire Wire Line
+	2000 3300 1600 3300
+Wire Wire Line
+	1600 3400 1600 3300
+Connection ~ 1600 3300
+Wire Wire Line
+	1600 3300 1500 3300
+Wire Wire Line
+	1050 3300 1050 4150
+Wire Wire Line
+	2800 4650 3050 4650
+Wire Wire Line
+	2800 4400 3050 4400
+Connection ~ 3050 4400
+Wire Wire Line
+	3050 4400 3050 4650
 Wire Wire Line
 	950  4400 2500 4400
 Wire Wire Line
-	2500 4400 2500 3800
-Wire Wire Line
-	2500 3800 2700 3800
-Wire Wire Line
-	950  4250 1050 4250
-Wire Wire Line
-	1050 3300 1200 3300
-Wire Wire Line
-	1050 3300 1050 4250
+	3050 3800 3050 4400
+Text Notes 950  5950 0    150  Italic 30
+RF Section
+Wire Notes Line
+	2350 4800 2900 4800
+Wire Notes Line
+	2900 4800 2900 4200
+Wire Notes Line
+	2900 4200 2350 4200
+Wire Notes Line
+	2350 4200 2350 4800
+Text Notes 2350 4950 0    30   ~ 0
+R11 - Clock input from the IO connector pin\nR12 - Clock input from SMA connector
+Wire Notes Line
+	1150 4050 2950 4050
+Wire Notes Line
+	2950 4050 2950 2050
+Wire Notes Line
+	2950 2050 1150 2050
+Wire Notes Line
+	1150 2050 1150 4050
+Text Notes 1200 2000 0    30   ~ 0
+This section may be populated by either:\n- basic TCXO\n- TCVCXO for better low frequency modulation performance
 $EndSCHEMATC
